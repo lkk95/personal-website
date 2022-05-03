@@ -1,0 +1,170 @@
+/*General appearance*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Body and Section Styling*/
+body {
+    margin: 3em 0;
+    margin: 0 auto;
+}
+
+.headingred {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3.75em;
+}
+
+.headingwhite {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3.75em;
+}
+
+.colorred {
+    color: #bf6d65;
+}
+
+.sectionheight {
+    height: 52em;
+}
+
+.sectionpadding {
+    padding: 3.75em 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    color: #bf6d65;
+}
+
+.navlink {
+    padding-right: 0.6em;
+    color: black;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_img {
+    border: solid white 4px;
+    border-radius: 50%;
+}
+
+.profile_btn {
+    width: 9em;
+    height: 2.5em;
+    margin-top: 3.75em;
+    border: solid 0px;
+    border-radius: 0.6em;
+    color: #000000;
+    font-size: 1rem;
+    background: #f2ebdb;
+    padding: 0.6em 1.25em;
+    text-decoration: none;
+}
+
+.profile_btn:hover {
+    background: #d1cbbd;
+    text-decoration: none;
+}
+
+.profile_txt {
+    font-size: 1.25em;
+    margin-top: 5.6em;
+}
+
+.interests {
+    background-color: #bf6d65;
+    padding: 3.75em;
+}
+
+.interests_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interests_item {
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 1.25em;
+    width: 18.75em;
+    height: 22em;
+    margin: 0.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interests_item h2 {
+    font-size: 1.25em;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #bf6d65;
+}
+
+.contactflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_item {
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 1.25em;
+    box-shadow: 0.3em 0.3em 1em #a2a1a1;
+    width: 25em;
+    height: 11.25em;
+    margin: 0.6em;
+    padding: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #bf6d65;
+}
+
+.biography {
+    background-color: #bf6d65;
+    color: white;
+}
+
+.bioflex {
+    display: flex;
+    justify-content: center;
+}
+
+.bio_item {
+    width: 37.5em;
+    height: 12.5em;
+    margin: 0 2.5em;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
+.bio_item ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2.5em;
+}

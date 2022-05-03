@@ -4,83 +4,172 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <title>Laura Kesel - Personal Website</title>
     </head>
     <body>
         <header>
             <h1>Laura Kesel</h1>
-            <nav role="navigation" aria-label="skip link">
-                <p><a href="main content">Jump to content</a></p>
-                <a href="contact">Contact</a>
-                <a href="biography">Biography</a>
+            <nav role="navigation" aria-label="skip navigation link">
+                <a href="#main content" class="navlink">Jump to content</a>
+                <a href="#interests" class="navlink">Interests</a>
+                <a href="#contact" class="navlink">Contact</a>
+                <a href="#biography" class="navlink">Biography</a>
             </nav>
         </header>
         <main id="main content">
-            <section>
+            <section class="profile sectionheight sectionpadding">
                 <img
+                    class="profile_img"
                     src="https://ca.slack-edge.com/TTHG21AH3-U03BQSXB6MD-829597e43d41-512"
                     alt="Woman with brown hair and brown eyes"
-                    width="160px"
-                    height="160px"
+                    width="300px"
+                    height="300px"
                 />
-                <p>Hi, my Name is Laura. Nice to meet you!</p>
-            </section>
-            <section>
-                <h2>Languages I speak</h2>
-                <ul aria-label="List of Programming languages">
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-                <h2>My Hobbies</h2>
-                <ol aria-label="List of hobbies">
-                    <li>Reading</li>
-                    <li>Yoga</li>
-                    <li>Dancing</li>
-                    <li>Traveling</li>
-                </ol>
-            </section>
-            <section id="contact">
-                <h2>Mobile Number</h2>
-                <p>01576 8835417</p>
-                <h2>E-Mail</h2>
-                <p>laura.kesel@gmail.com</p>
-                <h2>GitHub</h2>
-                <a href="https://github.com/lkk95" target="_blank"
-                    ><img
-                        src="https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757_1280.png"
-                        alt="GitHub-Logo"
-                        width="70px"
-                        height="70px"
-                /></a>
-                <h2>CodePen</h2>
-                <a href="https://codepen.io/laurak95" target="_blank"
-                    ><img
-                        src="imgs/codepen_logo.webp"
-                        alt="CodePen-Logo"
-                        width="70px"
-                        height="70px"
-                /></a>
-            </section>
-            <section id="biography">
-                <h2>About</h2>
-                <p>
-                    I am 27 years old and currently live in Trier. At the moment I`m enrolling in
-                    the Web Development Bootcamp at neuefische from April until July 2022. I have a
-                    Bachelor's degree in History and German.
+                <p class="profile_txt">
+                    Hi, my Name is Laura. Nice to meet you!
+                    <span class="material-icons-outlined material-icons"> waving_hand </span>
                 </p>
-                <h2>CV</h2>
-                <ol aria-label="List of degrees and positions">
-                    <li>2013: Abitur</li>
-                    <li>2015 - 2019: B.A. History/German Universität Stuttgart</li>
-                    <li>2016 - 2018: Studentische Aushilfe WLB Stuttgart</li>
-                    <li>2018 - 2019: Werkstudentin Daimler AG Stuttgart</li>
-                    <li>2020: M.Sc. Digital Humanities Universität Trier</li>
-                </ol>
+                <a href="#contact"><button type="button" class="profile_btn">Contact</button></a>
+            </section>
+            <section class="interests sectionheight sectionpadding" id="interests">
+                <h2 class="headingred">Skills and Interests</h2>
+                <div class="interests_flex">
+                    <div class="interests_item">
+                        <div>
+                            <h2>Skills</h2>
+                            <ul aria-label="List of work interests">
+                                <li>Python</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <span class="colorred material-icons-outlined material-icons"> work </span>
+                    </div>
+                    <div class="interests_item">
+                        <div>
+                            <h2>Personal Interests</h2>
+                            <ul aria-label="List of personal interests">
+                                <li>Reading</li>
+                                <li>Being creative</li>
+                                <li>Yoga</li>
+                                <li>Skiing</li>
+                                <li>Dancing</li>
+                            </ul>
+                        </div>
+                        <span class="colorred material-icons-outlined material-icons">
+                            person_outline
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="sectionheight sectionpadding">
+                <h2 class="headingwhite">Contact</h2>
+                <div class="contactflex">
+                    <div class="contact_item">
+                        <img
+                            src="imgs/github-6980894_1280.png"
+                            alt="GitHub Logo"
+                            width="80px"
+                            height="80px"
+                        />
+                        <div>
+                            <h3>GITHUB</h3>
+                            <p>See my cool repos.</p>
+                            <p>@lkk95</p>
+                            <a href="https://github.com/lkk95"
+                                ><span class="colorred material-icons-outlined material-icons">
+                                    east
+                                </span></a
+                            >
+                        </div>
+                    </div>
+                    <div class="contact_item">
+                        <img
+                            src="imgs/codepen_logo.webp"
+                            alt="CodePen Logo"
+                            width="80px"
+                            height="80px"
+                        />
+                        <div>
+                            <h3>CODEPEN</h3>
+                            <p>Let's code together.</p>
+                            <p>@laurak95</p>
+                            <a href="https://codepen.io/laurak95"
+                                ><span class="colorred material-icons-outlined material-icons">
+                                    east
+                                </span></a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="contactflex">
+                    <div class="contact_item">
+                        <img
+                            src="imgs/letter-ge72783eb2_1280.png"
+                            alt="E-Mail Icon"
+                            width="80px"
+                            height="60px"
+                        />
+                        <div>
+                            <h3>E-MAIL</h3>
+                            <p>Write me an email.</p>
+                            <p>laura.kesel@gmail.com</p>
+                            <a href=""
+                                ><span class="colorred material-icons-outlined material-icons">
+                                    east
+                                </span></a
+                            >
+                        </div>
+                    </div>
+                    <div class="contact_item">
+                        <img src="imgs/linkedin-gcc4a79f23_1280.png" width="80px" height="80px" />
+
+                        <div>
+                            <h3>LINKEDIN</h3>
+                            <p>Coming soon...</p>
+                            <p></p>
+                            <a href=""
+                                ><span class="colorred material-icons-outlined material-icons">
+                                    east
+                                </span></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="biography" class="biography sectionheight sectionpadding">
+                <h2 class="headingred">Biography</h2>
+                <div class="bioflex">
+                    <div class="bio_item">
+                        <p>
+                            I am 27 years old and currently live in Trier. At the moment I`m
+                            enrolling in the Web Development Bootcamp at neuefische from April until
+                            July 2022. I have a Bachelor's degree in History and German. After
+                            finishing the bootcamp I want to work as a Frontend-Developer.
+                        </p>
+                    </div>
+                    <div class="bio_item">
+                        <ul aria-label="List of degrees and positions">
+                            <li>2013: Abitur</li>
+                            <li>2015: B.A. History/German Universität Stuttgart</li>
+                            <li>2016: Studentische Aushilfe WLB Stuttgart</li>
+                            <li>2018: Werkstudentin Daimler AG Stuttgart</li>
+                            <li>2020: M.Sc. Digital Humanities Universität Trier</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
-            <p>Copyright Laura Kesel 2022</p>
+            <p>© Laura Kesel 2022</p>
         </footer>
     </body>
 </html>
